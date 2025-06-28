@@ -1,0 +1,65 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #c0c0c0, #e0e0e0);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  color: #999;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background: silver;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #aaa;
+}
+
+.coupons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coupon {
+  background: #f9f9f9;
+  border: 2px solid silver;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.locked {
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}

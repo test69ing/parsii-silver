@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silver Coupon Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">SILVER COUPON ACCESS</h1>
+    <div id="login-section">
+      <input type="text" id="codeInput" placeholder="Enter Unique Code" />
+      <button onclick="verifyCode()">Login</button>
+    </div>
+
+    <div id="coupon-section" class="hidden">
+      <h2>🎁 Your Discount Coupons</h2>
+      <div class="coupons">
+        <div class="coupon" id="step1">
+          <p>10% OFF</p>
+          <button onclick="applyCoupon(1)">Apply</button>
+        </div>
+        <div class="coupon locked" id="step2">
+          <p>15% OFF</p>
+          <button onclick="applyCoupon(2)">Locked</button>
+        </div>
+        <div class="coupon locked" id="step3">
+          <p>20% OFF</p>
+          <button onclick="applyCoupon(3)">Locked</button>
+        </div>
+        <div class="coupon locked" id="step4">
+          <p>25% OFF</p>
+          <button onclick="applyCoupon(4)">Locked</button>
+        </div>
+        <div class="coupon locked" id="step5">
+          <p>30% OFF</p>
+          <button onclick="applyCoupon(5)">Locked</button>
+        </div>
+      </div>
+      <p id="message"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
